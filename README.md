@@ -2,7 +2,7 @@
 ### Explicación de los pasos:
 
 1. **Instalación:**
-   - Instala las dependencias en la raíz del proyecto, en el backend y en el frontend.
+   - Ejecutar `npm install-all`, para instalar dependencias de tanto backend (port:3001) como frontend(port:3000)
 
 2. **Ejecución:**
    - Para ejecutar tanto el backend como el frontend juntos, utiliza `npm start` en la raíz del proyecto.
