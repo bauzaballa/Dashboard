@@ -1,3 +1,12 @@
-node_modules
+# Ignorar node_modules
+node_modules/
+
+# Ignorar archivos de entorno
 .env
-.DS_Store
+
+# Ignorar archivos de configuración local
+*.local
+
+# Ignorar archivos de compilación
+build/
+dist/
