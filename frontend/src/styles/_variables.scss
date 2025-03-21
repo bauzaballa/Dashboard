@@ -1,0 +1,31 @@
+// Colores
+$primary-color: #004992;
+$secondary-color: #F4FAFF;
+$terciary-color: #0076B8;
+
+// Fuentes
+$font-family: 'Montserrat',
+sans-serif;
+$font-size-base: 16px;
+
+// Espaciado
+$spacing-small: 10px;
+$spacing-medium: 20px;
+$spacing-large: 20px;
+
+
+:root {
+    --spacing-large: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+    :root {
+        --spacing-large: 35px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    :root {
+        --spacing-large: 50px;
+    }
+}

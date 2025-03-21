@@ -1,0 +1,88 @@
+@import '../variables';
+@import '../mixins';
+
+.contenedor-metricas {
+    width: 80%;
+    border-radius: $spacing-large;
+    padding: 70px;
+    background-color: $secondary-color;
+    max-width: 1330px;
+    max-height: 890px;
+    box-sizing: border-box;
+
+    .usuarioMetricas {
+        color: $terciary-color;
+        font-size: 22px;
+    }
+
+    .tituloMetricas {
+        color: $primary-color;
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .grafico {
+        display: flex;
+        flex-direction: column;
+        padding: $spacing-large;
+        border-radius: 8px;
+        background-color: white;
+        width: 81%;
+        height: auto;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            padding: 0;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+
+}
+
+.sup-bar-grafico {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 $spacing-large;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .titulo-grafico {
+        color: $primary-color;
+    }
+
+    select {
+        background: white url('../../assets/Vector.svg') no-repeat right 10px center;
+        width: 227.5px;
+        border: 0.82px solid #E6EDF4;
+        padding: 13.05px 9.79px;
+        box-sizing: border-box;
+        border-radius: 6.5px;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-size: 12px 6px;
+
+        @media screen and (max-width: 768px) {
+            width: 150px
+        }
+    }
+}
+
+.contenedor-main {
+    display: flex;
+    gap: $spacing-large;
+    height: 442px;
+    box-sizing: border-box;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        height: auto;
+    }
+}

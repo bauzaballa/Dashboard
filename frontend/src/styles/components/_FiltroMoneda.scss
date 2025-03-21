@@ -1,0 +1,80 @@
+@import '../variables';
+@import '../mixins';
+
+.filtro-moneda {
+    display: flex;
+    gap: $spacing-large;
+    margin-bottom: $spacing-large;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    &__button {
+        background-color: white;
+        padding: 10px;
+        padding-left: 50px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        width: 408px;
+        height: 130px;
+        box-shadow: 0px 4px 4px 0px #0000000A;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+
+        &.active {
+            background-color: $primary-color;
+            color: white;
+
+            .currency-icon {
+                filter: grayscale(100%) brightness(1000%);
+            }
+        }
+
+        div {
+            text-align: left;
+            font-size: 34px;
+        }
+
+        .currency-text {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .crecimiento {
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+        display: inline-flex;
+        align-items: center;
+        font-size: 15px;
+
+        &.positivo {
+            background-color: green;
+        }
+
+        &.negativo {
+            background-color: red;
+        }
+    }
+
+    .currency-icon {
+        width: 65px;
+        filter: brightness(0);
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+

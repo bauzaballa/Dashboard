@@ -1,0 +1,52 @@
+@import '../variables';
+@import '../mixins';
+
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw; 
+    background-color: $primary-color;
+    overflow: hidden;
+    padding: $spacing-large;
+    box-sizing: border-box;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        padding: 0;
+        padding-bottom: $spacing-large;
+    }
+
+    .menu {
+        width: 250px; 
+
+        color: white;
+        padding: 20px;
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                margin-bottom: 10px;
+                cursor: pointer;
+
+                &:hover {
+                    color: #3498db;
+                }
+            }
+        }
+    }
+
+    .contenedor-metricas {
+        flex: 1;
+        padding: 20px;
+        overflow-y: auto;
+    }
+}
