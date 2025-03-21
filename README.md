@@ -1,10 +1,39 @@
 
-### Explicación de los pasos:
+# Dashboard Financiero - Prueba Técnica
 
-1. **Instalación:**
-   - Ejecutar `npm install-all`, para instalar dependencias de tanto backend (port:3001) como frontend(port:3000)
+Este es un proyecto realizado para una prueba técnica frontend.
 
-2. **Ejecución:**
-   - Para ejecutar tanto el backend como el frontend juntos, utiliza `npm start` en la raíz del proyecto.
-   - Para ejecutar el backend por separado, navega al directorio [backend] y utiliza `npm start`.
-   - Para ejecutar el frontend por separado, navega al directorio [frontend] y utiliza `npm start`.
+
+## Instalacion
+
+Para instalar el proyecto, tanto backend como frontend. 
+Ejecutar en la raíz del proyecto.
+
+```bash
+  npm install-all
+```
+
+Para instalar solo backend.
+Navegar hasta [backend].
+
+```bash
+  npm start
+```
+
+Para instalar solo frontend.
+Navegar hasta [frontend].
+
+```bash
+  npm start
+```
+
+
+## Ejecución
+
+Para inicializar el proyecto.
+Ejecutar en la raíz de este.
+
+```bash
+  npm start
+```
+
